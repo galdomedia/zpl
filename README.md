@@ -1,9 +1,7 @@
 Zebra ZPL [![build status][status-image]][ci]
 =============================================
 
-Writing Zebra ZPL files shouldn't vomit raw ASCII in your code.
-
-The goal is to provide a DSL for creating these files without mucking about with control codes.
+Generate a ZPL string from a hash.
 
 Example of the desired usage:
 
