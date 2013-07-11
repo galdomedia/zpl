@@ -1,18 +1,18 @@
 require 'spec_helper'
 
-describe ZebraZpl::Field do
+describe Zpl::Field do
 
   describe 'constants' do
 
     it 'SUFFIX' do
-      ZebraZpl::Field::SUFFIX.should == '^FS'
+      Zpl::Field::SUFFIX.should == '^FS'
     end
 
   end
 
   describe 'commands' do
 
-    let(:field) { ZebraZpl::Field.new }
+    let(:field) { Zpl::Field.new }
 
     describe '#origin=' do
 

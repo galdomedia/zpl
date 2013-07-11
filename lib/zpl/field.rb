@@ -1,7 +1,7 @@
-class ZebraZpl::Field
+class Zpl::Field
 
-  include ZebraZpl::Commands::FieldOrigin
-  include ZebraZpl::Commands::Font
+  include Zpl::Commands::FieldOrigin
+  include Zpl::Commands::Font
 
   attr_accessor :data
 
@@ -12,7 +12,7 @@ class ZebraZpl::Field
   SUFFIX = '^FS'
 
   def self.build &block
-    builder = ZebraZpl::FieldBuilder.new
+    builder = Zpl::FieldBuilder.new
     builder.instance_eval &block
     builder.field
   end

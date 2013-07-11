@@ -28,7 +28,7 @@
 # - 24   dots = 1 mm, 608 dots = 1 inch
 #
 # To be compatible with existing printers, this command must come before the first ^FS (Field Separator) command. Once you have issued an ^LH command, the setting is retained until you turn off the printer or send a new ^LH command to the printer.
-module ZebraZpl::Commands::Home
+module Zpl::Commands::Home
 
   COMMAND = '^LH'
 
@@ -39,10 +39,10 @@ module ZebraZpl::Commands::Home
   #   @param [Integer] y the y position (in dots)
   #
   # @example using with builder
-  #   ZebraZpl::Label.build { home 3, 2 }
+  #   Zpl::Label.build { home 3, 2 }
   #
   # @example setting directly on a label
-  #   f = ZebraZpl::Label.new
+  #   f = Zpl::Label.new
   #   f.home = 3, 2
   def home= *args
     @data << "#{ COMMAND }#{ [*args].join ',' }"

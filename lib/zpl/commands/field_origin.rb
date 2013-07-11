@@ -22,7 +22,7 @@
 #
 # If the value entered for the x or y parameter is too high, it could position
 # the field origin completely off the label.
-module ZebraZpl::Commands::FieldOrigin
+module Zpl::Commands::FieldOrigin
 
   COMMAND = '^FO'
 
@@ -33,10 +33,10 @@ module ZebraZpl::Commands::FieldOrigin
   #   @param [Integer] y the y position (in dots)
   #
   # @example using with builder
-  #   ZebraZpl::Label.build { origin 3, 2 }
+  #   Zpl::Label.build { origin 3, 2 }
   #
   # @example setting directly on a field
-  #   f = ZebraZpl::Label.new
+  #   f = Zpl::Label.new
   #   f.origin = 3, 2
   def origin= *args
     @data << "#{ COMMAND }#{ [*args].join ',' }"

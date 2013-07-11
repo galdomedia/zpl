@@ -1,9 +1,9 @@
-class ZebraZpl::FieldBuilder
+class Zpl::FieldBuilder
 
   attr_accessor :field
 
   def initialize
-    @field = ZebraZpl::Field.new
+    @field = Zpl::Field.new
   end
 
   def method_missing name, *args

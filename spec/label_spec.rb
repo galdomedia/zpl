@@ -1,22 +1,22 @@
 require 'spec_helper'
 
-describe ZebraZpl::Label do
+describe Zpl::Label do
 
   describe 'constants' do
 
     it 'PREFIX' do
-      ZebraZpl::Label::PREFIX.should == '^XA'
+      Zpl::Label::PREFIX.should == '^XA'
     end
 
     it 'SUFFIX' do
-      ZebraZpl::Label::SUFFIX.should == '^XZ'
+      Zpl::Label::SUFFIX.should == '^XZ'
     end
 
   end
 
   describe 'commands' do
 
-    let(:label) { ZebraZpl::Label.new }
+    let(:label) { Zpl::Label.new }
 
     describe '#default_width=' do
 

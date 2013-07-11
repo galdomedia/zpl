@@ -60,7 +60,7 @@
 # ## Notes
 #
 # The speed setting for p, s, and b is dependent on the limitations of the printer. If a particular printer is limited to a rate of 6 ips (inches per second), a value of 12 can be entered but the printer performs only at a 6 ips rate. See your printer’s User Guide for specifics on performance.
-module ZebraZpl::Commands::PrintRate
+module Zpl::Commands::PrintRate
 
   COMMAND = '^PR'
 
@@ -72,10 +72,10 @@ module ZebraZpl::Commands::PrintRate
   #   @param [Integer] backfeed_speed the reverse speed
   #
   # @example using with builder
-  #   ZebraZpl::Label.build { print_rate :a }
+  #   Zpl::Label.build { print_rate :a }
   #
   # @example setting directly on a label
-  #   f = ZebraZpl::Label.new
+  #   f = Zpl::Label.new
   #   f.print_rate = :a
   def print_rate= *args
     print_speed, slew_speed, backfeed_speed = [*args]

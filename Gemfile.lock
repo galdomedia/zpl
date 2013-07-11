@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    zebra_zpl (0.0.1)
+    ZPL (0.0.1)
 
 GEM
   remote: http://rubygems.org/
@@ -46,4 +46,4 @@ DEPENDENCIES
   redcarpet
   rspec
   yard
-  zebra_zpl!
+  ZPL!

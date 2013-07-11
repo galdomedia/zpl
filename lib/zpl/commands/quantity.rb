@@ -32,7 +32,7 @@
 # ## Notes
 #
 # If the o parameter is set to Y, the printer cuts but does not pause, and the printer does not pause after every group count of labels has been printed. With the o parameter set to N (default), the printer pauses after every group count of labels has been printed.
-module ZebraZpl::Commands::Quantity
+module Zpl::Commands::Quantity
 
   COMMAND = '^PQ'
 
@@ -42,10 +42,10 @@ module ZebraZpl::Commands::Quantity
   #   @param [Integer] qty the number of labels to print
   #
   # @example using with builder
-  #   ZebraZpl::Label.build { quantity 2 }
+  #   Zpl::Label.build { quantity 2 }
   #
   # @example setting directly on a label
-  #   f = ZebraZpl::Label.new
+  #   f = Zpl::Label.new
   #   f.quantity = 2
   def quantity= *args
     @data << "#{ COMMAND }#{ args.join ',' }"

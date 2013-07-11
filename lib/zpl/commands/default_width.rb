@@ -24,7 +24,7 @@
 # For parameter r, the actual ratio generated is a function of the number of dots in parameter w, module width.
 #
 # Once a ^BY command is entered into a label format ,it stays in effect until another ^BY command is encountered.
-module ZebraZpl::Commands::DefaultWidth
+module Zpl::Commands::DefaultWidth
 
   COMMAND = '^BY'
 
@@ -36,7 +36,7 @@ module ZebraZpl::Commands::DefaultWidth
   #   @param [Integer] h the bar code height (in dots)
   #
   # @example using with builder
-  #   ZebraZpl::Label.build { default_width 3, 2, 10 }
+  #   Zpl::Label.build { default_width 3, 2, 10 }
   #
   # @example setting directly on a field
   #   f.default_width = 3, 2, 10

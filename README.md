@@ -29,7 +29,7 @@ label.to_s # => ^XA^FWN^LH20,0^BY0,0^PRA^PQ4^FO5,20^ADN,60^FB1175,5,,^FDTest^FS^
 ```
 
 <!-- links -->
-[ci]: http://travis-ci.org/BM5k/zebra_zpl "build status"
+[ci]: http://travis-ci.org/BM5k/ZPL "build status"
 
 <!-- images -->
-[status-image]: https://secure.travis-ci.org/BM5k/zebra_zpl.png?branch=master
+[status-image]: https://secure.travis-ci.org/BM5k/ZPL.png?branch=master

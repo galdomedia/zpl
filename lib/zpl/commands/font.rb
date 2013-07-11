@@ -39,7 +39,7 @@
 # ## Notes
 #
 # Fonts are built using a matrix that defines standard height-to-width ratios. If you specify only the height or width value standard matrix for that font automatically determines the other value. If the value is not given or a 0 (zero) is entered, the height or width is determined by the standard font matrix.
-module ZebraZpl::Commands::Font
+module Zpl::Commands::Font
 
   COMMAND = '^A'
 
@@ -51,10 +51,10 @@ module ZebraZpl::Commands::Font
   #   @option opts [String] :height      the height (in dots)
   #   @option opts [String] :width       the width (in dots)
   #
-  # @see ZebraZpl::Commands::Orientation
+  # @see Zpl::Commands::Orientation
   #
   # @example using with builder
-  #   ZebraZpl::Field.build { font :e, :orientation => :r, height: 15, width: 20 }
+  #   Zpl::Field.build { font :e, :orientation => :r, height: 15, width: 20 }
   #
   # @example setting directly on a field
   #   f.font = :e, :orientation => :r, height: 15, width: 20

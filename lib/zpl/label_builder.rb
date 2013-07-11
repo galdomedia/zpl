@@ -1,9 +1,9 @@
-class ZebraZpl::LabelBuilder
+class Zpl::LabelBuilder
 
   attr_accessor :label
 
   def initialize
-    @label = ZebraZpl::Label.new
+    @label = Zpl::Label.new
   end
 
   def method_missing name, *args

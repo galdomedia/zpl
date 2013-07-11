@@ -1,4 +1,4 @@
 source :rubygems
 
-# Specify your gem's dependencies in zebra_zpl.gemspec
+# Specify your gem's dependencies in ZPL.gemspec
 gemspec

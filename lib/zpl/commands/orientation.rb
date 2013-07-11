@@ -19,7 +19,7 @@
 #   - **R** = rotated 90 degrees
 #   - **I** = inverted 180 degrees
 #   - **B** = bottom-up 270 degrees, read from bottom up
-module ZebraZpl::Commands::Orientation
+module Zpl::Commands::Orientation
 
   COMMAND = '^FW'
 
@@ -28,10 +28,10 @@ module ZebraZpl::Commands::Orientation
   # @param orientation [String] the direction identifier
   #
   # @example using with builder
-  #   ZebraZpl::Label.build { orientation :r }
+  #   Zpl::Label.build { orientation :r }
   #
   # @example setting directly on a label
-  #   f = ZebraZpl::Label.new
+  #   f = Zpl::Label.new
   #   f.orientation = :r
   def orientation= rotation
     @data << "#{ COMMAND }#{ rotation.to_s.upcase }"

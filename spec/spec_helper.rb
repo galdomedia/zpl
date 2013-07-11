@@ -1,1 +1,1 @@
-%w[ cover_me zebra_zpl pry pry-nav ].each { |lib| require lib }
+%w[ cover_me ZPL pry pry-nav ].each { |lib| require lib }

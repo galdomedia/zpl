@@ -1,4 +1,4 @@
-module ZebraZpl::Commands
+module Zpl::Commands
 end
 
 %w[
@@ -9,4 +9,4 @@ end
   orientation
   print_rate
   quantity
-].each { |f| require "zebra_zpl/commands/#{ f }"}
+].each { |f| require "ZPL/commands/#{ f }"}
